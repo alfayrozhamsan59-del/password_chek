@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Security Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="icon">🔐</div>
+            <h1>Password Security Checker</h1>
+            <p>Periksa seberapa aman password Anda</p>
+        </div>
+
+        <div class="card">
+
+            <label for="password">Masukkan Password</label>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Ketik password Anda..."
+                    autocomplete="off"
+                >
+                <button type="button" id="togglePassword">
+                    Lihat
+                </button>
+            </div>
+
+            <div class="strength-info">
+                <span>Kekuatan Password</span>
+                <strong id="strengthText">Belum diperiksa</strong>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <div class="score">
+                Skor Keamanan: <strong id="score">0/100</strong>
+            </div>
+
+            <div class="details">
+                <h3>Kriteria Keamanan</h3>
+
+                <p id="length">○ Minimal 12 karakter</p>
+                <p id="uppercase">○ Mengandung huruf besar (A-Z)</p>
+                <p id="lowercase">○ Mengandung huruf kecil (a-z)</p>
+                <p id="number">○ Mengandung angka (0-9)</p>
+                <p id="symbol">○ Mengandung simbol (!@#$%)</p>
+                <p id="common">○ Tidak menggunakan password umum</p>
+            </div>
+
+            <div class="recommendation">
+                <h3>Rekomendasi</h3>
+                <p id="recommendationText">
+                    Masukkan password untuk melihat rekomendasi keamanan.
+                </p>
+            </div>
+
+            <div class="warning">
+                ⚠️ Jangan gunakan password asli atau password penting
+                pada website pengujian yang belum terpercaya.
+            </div>
+
+        </div>
+
+        <footer>
+            <p>© 2026 Password Security Checker</p>
+            <p>Projek Mahasiswa Sistem Informasi</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

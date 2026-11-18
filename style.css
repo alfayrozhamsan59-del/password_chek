@@ -1,0 +1,186 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101827, #1e293b);
+    min-height: 100vh;
+    color: #fff;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.header p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.card {
+    background: #ffffff;
+    color: #1e293b;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.password-box {
+    display: flex;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.password-box:focus-within {
+    border-color: #0ea5e9;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    min-width: 0;
+}
+
+.password-box button {
+    border: none;
+    background: #e2e8f0;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.password-box button:hover {
+    background: #cbd5e1;
+}
+
+.strength-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#strengthText {
+    color: #64748b;
+}
+
+.progress {
+    height: 12px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background: #94a3b8;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.score {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.details {
+    margin-top: 30px;
+}
+
+.details h3,
+.recommendation h3 {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.details p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.details p.valid {
+    color: #16a34a;
+}
+
+.recommendation {
+    background: #f1f5f9;
+    padding: 18px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.recommendation p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.warning {
+    margin-top: 20px;
+    background: #fff7ed;
+    color: #c2410c;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #94a3b8;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 22px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .strength-info {
+        font-size: 12px;
+    }
+}
